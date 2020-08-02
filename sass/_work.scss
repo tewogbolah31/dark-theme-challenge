@@ -1,0 +1,63 @@
+.work{
+  background-color: hsl(218, 28%, 13%);
+  margin: 10rem 0;
+
+  @media only screen and (max-width: 43.75em) {
+    margin: 8rem 0;
+  }
+
+  @media only screen and (max-width: 37.5em){
+    margin: 6rem 0;
+  }
+
+
+  &__img{
+    width: 100%;
+    padding: 2rem;
+
+    @media only screen and (max-width: 37.5em){
+      padding: 3rem;
+    }
+  }
+
+  &__text{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 43.75em) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__box{
+    padding: 3rem;
+    width: 80%;
+    margin-top: 6rem;
+    margin-left: 10%;
+
+    @media only screen and (max-width: 43.75em) {
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &__link{
+    font-size: 1.4rem;
+    padding: .8rem .3rem .5rem .3rem;
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    transition: all .3s;
+    
+    &:hover{
+      background-color: hsl(176, 68%, 64%);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+      transform: scale(1.06) translateY(-.5rem);
+      color: #fff;
+    }
+  }
+
+  &__arrow{
+    transform: translateY(4.2px);
+  }
+}

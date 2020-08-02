@@ -1,0 +1,41 @@
+.heading-1{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  letter-spacing: .5px;
+  
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+.heading-2{
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  margin-bottom: 1.3rem;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.9rem;
+  }
+
+}
+.btn{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 4rem;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%) 0%, hsl(182, 68%, 64%) 51%, hsl(198, 60%,50%) 100%);
+    transition: all .3s;
+}
+
+.btn:hover{
+  background-image: linear-gradient(to left, hsl(176, 68%, 64%) 0%, hsl(182, 68%, 64%) 51%, hsl(198, 60%, 50%) 100%);
+}

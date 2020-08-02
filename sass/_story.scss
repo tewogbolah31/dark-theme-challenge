@@ -1,0 +1,53 @@
+.story{
+  margin: 10rem 0;
+
+  @media only screen and (max-width: 43.75em) {
+    margin: 7rem 0;
+  }
+
+
+  &__box{
+    padding: 2rem;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 3px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 .5rem 1.5rem rgba($color-black, .3);
+  }
+
+  &__text{
+    font-size: 1.3rem;
+    display: block;
+  }
+
+  &__profile{
+    display: flex;
+    align-items: start;
+    margin-top: 2.5rem;
+  }
+
+  &__img{
+      height: 4rem;
+      border-radius: 50%;
+      margin-right: 2.5rem;
+
+  }
+
+  &__author{
+    margin-top: .5rem;
+    font-size: 1.3rem;
+
+  }
+
+  &__details{
+    margin-top: .5rem;
+  }
+
+}
+
+.quotes{
+  height: 5rem;
+  margin-bottom: -1.5rem;
+  z-index: 1;
+  position: relative;
+}

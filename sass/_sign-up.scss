@@ -1,0 +1,88 @@
+.sign-up{
+
+  margin: 15rem 0;
+
+  @media only screen and (max-width: 43.75em) {
+    margin: 10rem 0;
+  }
+
+  &__box{
+    background-color: hsl(217, 28%, 15%);
+    width: 60%;
+    margin-left: 20%;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 1.3rem rgba($color-black, .5);
+
+    @media only screen and (max-width: 62.5em) {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+  &__text{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+  }
+
+  &__input{
+    border: none;
+    height: 3.6rem;
+    border-radius: 100px;
+    width: 60%;
+    margin-right: 3rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    transition: .3s;
+
+    @media only screen and (max-width: 37.5em) {
+      width: 80%;
+      margin: 0 10%;
+    }
+    @media only screen and (max-width: 25em) {
+      width: 100%;
+      margin: 0;
+    }
+
+    &:focus{
+      outline: none;
+      box-shadow: 0 1rem 1.5rem rgba($color-black,.5);
+    }
+
+    &::-webkit-input-placeholder{
+      color: #a9a69b;
+    }
+  }
+
+  &__btn{
+    cursor: pointer;
+    padding: 1rem 1.7rem;
+    width: 30%;
+    border: none;
+
+    @media only screen and (max-width: 37.5em) {
+      margin-top: 1.5rem;
+      width: 50%;
+      margin-right: 25%;
+      margin-left: 25%;
+      padding: 1rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      margin-top: 1rem;
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+.center{
+  text-align: center;
+}

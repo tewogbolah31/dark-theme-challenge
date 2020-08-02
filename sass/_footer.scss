@@ -1,0 +1,153 @@
+.footer{
+  font-size: 1.3rem;
+  margin-top: 10rem;
+  padding: 5rem;
+  background-color: hsl(216, 53%, 9%);
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 2.5rem;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    margin-top: 8rem 0;
+  }
+
+  &__logo{
+    @media only screen and (max-width: 37.5em) {
+      width: 25%;
+    }
+  }
+  &__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  }
+
+
+  &__details{
+    display: flex;
+    align-items: start;
+    flex: 0 0 30%;
+
+    @media only screen and (max-width: 37.5em) {
+      align-self: start;
+     flex: 0 1 auto;
+    }
+  }
+
+  &__icon{
+    margin-right: 1.5rem;
+
+    @media only screen and (max-width: 37.5em) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__call{
+
+    margin-top: 1rem;
+
+    & > *{
+      display: flex;
+      align-items: center;
+
+
+      &:not(:last-child){
+        margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: 37.5em) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__nav{
+    list-style: none;
+  }
+
+  &__list{
+
+    @media only screen and (max-width: 37.5em) {
+      margin-top: 2rem;
+    }
+
+    &:not(:last-child){
+      margin-bottom: 1.5rem;
+
+      @media only screen and (max-width: 37.5em) {
+        margin-bottom: .8rem;
+      }
+    }
+  }
+
+  &__item:link,
+  &__item:visited{
+    text-decoration: none;
+    color: #ddd8cd;
+    transition: all .2s;
+  }
+
+  &__item:hover,
+  &__item:active{
+    color: hsl(176, 68%, 64%);
+  }
+
+  &__social{
+    @media only screen and (max-width: 37.5em) {
+      margin-top: 2rem;
+    }
+
+    & > *{
+      color: #ddd8cd;
+
+      &:not(:last-child){
+       margin-right: .8rem;
+      }
+    }
+
+  }
+}
+
+.ion-social-facebook{
+  font-size: 1.7rem;
+  padding: .8rem 1.4rem;
+  border: 1px solid #ddd8cd;
+  border-radius: 50%;
+  transition: all .2s;
+}
+
+.ion-social-twitter{
+  font-size: 1.7rem;
+  padding: .8rem 1rem;
+  border: 1px solid #ddd8cd;
+  border-radius: 50%;
+  transition: all .2s;
+}
+
+.ion-social-instagram{
+  font-size: 1.7rem;
+  padding: .8rem 1.2rem;
+  border: 1px solid #ddd8cd;
+  border-radius: 50%;
+  transition: all .2s;
+}
+
+.ion-social-facebook:hover{
+  color:#3b5998;
+  border: 1px solid #3b5998;
+}
+.ion-social-twitter:hover{
+  color: #00aced;
+  border: 1px solid #00aced;
+}
+
+.ion-social-instagram:hover{
+  color: #517fa4;
+  border: 1px solid #517fa4;
+}
